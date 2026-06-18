@@ -1,0 +1,494 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>wEkO-Scholink | From Traditional to Digital</title>
+  <meta name="description"
+    content="wEkO-Scholink helps schools move from traditional processes to connected digital learning, administration, and communication." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            scholink: {
+              navy: "#062765",
+              blue: "#0874bd",
+              sky: "#2da7d9",
+              green: "#5fb709",
+              leaf: "#7bd10e",
+              ink: "#243246"
+            }
+          },
+          boxShadow: {
+            glow: "0 24px 70px rgba(8, 116, 189, 0.18)"
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    body {
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    .brand-gradient {
+      background:
+        radial-gradient(circle at 14% 18%, rgba(123, 209, 14, 0.18), transparent 28%),
+        radial-gradient(circle at 80% 12%, rgba(45, 167, 217, 0.16), transparent 30%),
+        linear-gradient(135deg, #f9fcff 0%, #ffffff 42%, #f6fbf2 100%);
+    }
+
+    .link-line {
+      background-image: linear-gradient(90deg, #5fb709, #0874bd);
+    }
+
+    .audience-panel,
+    .faq-answer {
+      transition: max-height 280ms ease, opacity 220ms ease, transform 220ms ease;
+    }
+  </style>
+</head>
+
+<body class="bg-white text-scholink-ink antialiased">
+  <header class="fixed inset-x-0 top-0 z-50 border-b border-slate-200/70 bg-white/88 backdrop-blur">
+    <nav class="mx-auto flex h-20 max-w-7xl items-center justify-between px-5 sm:px-8" aria-label="Main navigation">
+      <a href="#home" class="flex items-center gap-3">
+        <img src="/static/logo.gif" alt="wEkO-Scholink logo" class="h-12 w-12 rounded object-contain" />
+        <span class="text-lg font-black tracking-normal text-scholink-navy">wEkO-Scholink</span>
+      </a>
+
+      <button id="menuButton"
+        class="grid h-11 w-11 place-items-center rounded border border-slate-200 text-scholink-navy md:hidden"
+        type="button" aria-controls="mobileMenu" aria-expanded="false">
+        <span class="sr-only">Menu</span>
+        <span class="block h-0.5 w-5 bg-current"></span>
+      </button>
+
+      <div class="hidden items-center gap-8 text-sm font-semibold text-slate-700 md:flex">
+        <a class="hover:text-scholink-blue" href="#platform">Platform</a>
+        <a class="hover:text-scholink-blue" href="#impact">Impact</a>
+        <a class="hover:text-scholink-blue" href="#demo">Demo</a>
+        <a class="hover:text-scholink-blue" href="#contact">Contact</a>
+        <a class="rounded bg-scholink-green px-5 py-3 font-bold text-white shadow-sm transition hover:bg-scholink-navy"
+          href="#contact">
+          Start digital shift
+        </a>
+      </div>
+    </nav>
+    <div id="mobileMenu" class="hidden border-t border-slate-200 bg-white px-5 py-4 md:hidden">
+      <div class="grid gap-3 text-sm font-semibold text-slate-700">
+        <a href="#platform">Platform</a>
+        <a href="#impact">Impact</a>
+        <a href="#demo">Demo</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="brand-gradient min-h-screen pt-28">
+      <div class="mx-auto grid max-w-7xl items-center gap-10 px-5 pb-16 sm:px-8 lg:grid-cols-[1.05fr_0.95fr] lg:pt-8">
+        <div class="max-w-3xl">
+          <div
+            class="mb-7 inline-flex items-center gap-3 rounded border border-scholink-sky/25 bg-white px-4 py-2 text-sm font-bold text-scholink-blue shadow-sm">
+            <span class="h-2.5 w-2.5 rounded-full bg-scholink-green"></span>
+            From Traditional to Digital
+          </div>
+          <h1 class="text-5xl font-black leading-[1.02] tracking-normal text-scholink-navy sm:text-6xl lg:text-7xl">
+            wEkO-Scholink
+          </h1>
+          <p class="mt-6 max-w-2xl text-lg leading-8 text-slate-700 sm:text-xl">
+            A friendly digital bridge for schools, learners, teachers, and parents who need one connected place for
+            learning,
+            administration, communication, and progress tracking.
+          </p>
+          <div class="mt-9 flex flex-col gap-3 sm:flex-row">
+            <a href="#demo"
+              class="rounded bg-scholink-navy px-6 py-4 text-center font-bold text-white transition hover:bg-scholink-blue">
+              Explore platform
+            </a>
+            <a href="#contact"
+              class="rounded border border-scholink-blue px-6 py-4 text-center font-bold text-scholink-blue transition hover:bg-scholink-blue hover:text-white">
+              Request onboarding
+            </a>
+          </div>
+          <div class="mt-10 grid max-w-2xl grid-cols-3 gap-3">
+            <div class="border-l-4 border-scholink-green bg-white/70 px-4 py-3">
+              <p class="text-2xl font-black text-scholink-navy">360</p>
+              <p class="text-xs font-bold uppercase tracking-wide text-slate-500">School view</p>
+            </div>
+            <div class="border-l-4 border-scholink-sky bg-white/70 px-4 py-3">
+              <p class="text-2xl font-black text-scholink-navy">4</p>
+              <p class="text-xs font-bold uppercase tracking-wide text-slate-500">User groups</p>
+            </div>
+            <div class="border-l-4 border-scholink-blue bg-white/70 px-4 py-3">
+              <p class="text-2xl font-black text-scholink-navy">1</p>
+              <p class="text-xs font-bold uppercase tracking-wide text-slate-500">Digital hub</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative">
+          <div
+            class="absolute -left-5 top-8 hidden h-32 w-32 rounded-full border-[18px] border-scholink-green/15 lg:block">
+          </div>
+          <div class="relative overflow-hidden rounded border border-slate-200 bg-white p-5 shadow-glow">
+            <img src="/static/logo.gif" alt="wEkO-Scholink education technology logo"
+              class="mx-auto aspect-[1.18/1] w-full max-w-xl object-contain" />
+            <div class="link-line mt-4 h-1 w-full rounded-full"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mx-auto max-w-7xl px-5 pb-8 sm:px-8">
+        <div class="grid gap-4 border-t border-slate-200 pt-8 md:grid-cols-4" aria-label="Platform highlights">
+          <p class="font-bold text-scholink-navy">Digital records</p>
+          <p class="font-bold text-scholink-navy">Learner progress</p>
+          <p class="font-bold text-scholink-navy">Parent communication</p>
+          <p class="font-bold text-scholink-navy">Teacher workflow</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="platform" class="bg-white py-20">
+      <div class="mx-auto max-w-7xl px-5 sm:px-8">
+        <div class="max-w-3xl">
+          <p class="text-sm font-black uppercase tracking-[0.18em] text-scholink-green">Connected learning</p>
+          <h2 class="mt-3 text-3xl font-black tracking-normal text-scholink-navy sm:text-5xl">
+            Built around the people who keep a school moving.
+          </h2>
+        </div>
+
+        <div class="mt-10 flex flex-wrap gap-3" role="tablist" aria-label="Audience tabs">
+          <button class="audience-tab rounded border px-5 py-3 font-bold" data-tab="admins" role="tab"
+            type="button">Administrators</button>
+          <button class="audience-tab rounded border px-5 py-3 font-bold" data-tab="teachers" role="tab"
+            type="button">Teachers</button>
+          <button class="audience-tab rounded border px-5 py-3 font-bold" data-tab="parents" role="tab"
+            type="button">Parents</button>
+          <button class="audience-tab rounded border px-5 py-3 font-bold" data-tab="students" role="tab"
+            type="button">Students</button>
+        </div>
+
+        <div class="mt-8 grid gap-5 lg:grid-cols-[0.9fr_1.1fr]">
+          <div class="rounded border border-slate-200 bg-slate-50 p-6">
+            <p id="audienceKicker" class="text-sm font-black uppercase tracking-[0.16em] text-scholink-blue"></p>
+            <h3 id="audienceTitle" class="mt-3 text-2xl font-black text-scholink-navy"></h3>
+            <p id="audienceCopy" class="mt-4 leading-7 text-slate-700"></p>
+          </div>
+          <div id="audienceFeatures" class="grid gap-4 sm:grid-cols-2"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="impact" class="bg-slate-50 py-20">
+      <div class="mx-auto max-w-7xl px-5 sm:px-8">
+        <div class="grid gap-10 lg:grid-cols-[0.85fr_1.15fr] lg:items-start">
+          <div>
+            <p class="text-sm font-black uppercase tracking-[0.18em] text-scholink-green">Digital readiness</p>
+            <h2 class="mt-3 text-3xl font-black tracking-normal text-scholink-navy sm:text-5xl">
+              A practical path from paper to platform.
+            </h2>
+            <p class="mt-5 leading-8 text-slate-700">
+              Schools can begin with the workflows they need most, then expand as teams and families become comfortable.
+            </p>
+          </div>
+          <div class="grid gap-4 md:grid-cols-3">
+            <article class="rounded border border-slate-200 bg-white p-6">
+              <p class="text-4xl font-black text-scholink-green">01</p>
+              <h3 class="mt-5 text-xl font-black text-scholink-navy">Organize</h3>
+              <p class="mt-3 leading-7 text-slate-600">Student profiles, classes, attendance, reports, and school
+                records in a searchable hub.</p>
+            </article>
+            <article class="rounded border border-slate-200 bg-white p-6">
+              <p class="text-4xl font-black text-scholink-blue">02</p>
+              <h3 class="mt-5 text-xl font-black text-scholink-navy">Connect</h3>
+              <p class="mt-3 leading-7 text-slate-600">Teachers, parents, and learners stay aligned with updates, tasks,
+                feedback, and alerts.</p>
+            </article>
+            <article class="rounded border border-slate-200 bg-white p-6">
+              <p class="text-4xl font-black text-scholink-sky">03</p>
+              <h3 class="mt-5 text-xl font-black text-scholink-navy">Improve</h3>
+              <p class="mt-3 leading-7 text-slate-600">Progress data becomes easier to understand, share, and act on
+                before issues grow.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="demo" class="bg-white py-20">
+      <div class="mx-auto max-w-7xl px-5 sm:px-8">
+        <div class="grid gap-10 lg:grid-cols-2 lg:items-center">
+          <div>
+            <p class="text-sm font-black uppercase tracking-[0.18em] text-scholink-green">Interactive fit check</p>
+            <h2 class="mt-3 text-3xl font-black tracking-normal text-scholink-navy sm:text-5xl">
+              Choose a school priority.
+            </h2>
+            <p class="mt-5 leading-8 text-slate-700">
+              The landing page adapts the recommended first step based on the immediate need.
+            </p>
+            <div class="mt-8 grid gap-3">
+              <button
+                class="priority-btn rounded border border-slate-200 px-5 py-4 text-left font-bold hover:border-scholink-blue"
+                data-priority="records" type="button">
+                Reduce paper records
+              </button>
+              <button
+                class="priority-btn rounded border border-slate-200 px-5 py-4 text-left font-bold hover:border-scholink-blue"
+                data-priority="communication" type="button">
+                Improve parent communication
+              </button>
+              <button
+                class="priority-btn rounded border border-slate-200 px-5 py-4 text-left font-bold hover:border-scholink-blue"
+                data-priority="learning" type="button">
+                Track learner progress
+              </button>
+            </div>
+          </div>
+          <aside class="rounded border border-slate-200 bg-scholink-navy p-7 text-white shadow-glow">
+            <p class="text-sm font-black uppercase tracking-[0.18em] text-scholink-leaf">Recommended launch</p>
+            <h3 id="priorityTitle" class="mt-4 text-3xl font-black">Digital records sprint</h3>
+            <p id="priorityCopy" class="mt-4 leading-8 text-blue-50">
+              Start with admissions, student profiles, class lists, and attendance so the school has a reliable
+              foundation.
+            </p>
+            <div class="mt-8">
+              <div class="mb-2 flex justify-between text-sm font-bold">
+                <span>Launch readiness</span>
+                <span id="readinessLabel">72%</span>
+              </div>
+              <div class="h-3 overflow-hidden rounded-full bg-white/20">
+                <div id="readinessBar" class="h-full w-[72%] rounded-full bg-scholink-leaf transition-all duration-300">
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-slate-50 py-20">
+      <div class="mx-auto max-w-4xl px-5 sm:px-8">
+        <p class="text-sm font-black uppercase tracking-[0.18em] text-scholink-green">Questions</p>
+        <h2 class="mt-3 text-3xl font-black tracking-normal text-scholink-navy sm:text-5xl">
+          Clear answers for school teams.
+        </h2>
+        <div class="mt-10 divide-y divide-slate-200 rounded border border-slate-200 bg-white">
+          <div class="faq-item p-5">
+            <button
+              class="faq-toggle flex w-full items-center justify-between gap-4 text-left font-black text-scholink-navy"
+              type="button">
+              Can wEkO-Scholink support traditional schools moving online?
+              <span class="faq-symbol text-2xl text-scholink-green">+</span>
+            </button>
+            <div class="faq-answer max-h-0 overflow-hidden opacity-0">
+              <p class="pt-4 leading-7 text-slate-700">Yes. The platform message is designed around phased adoption, so
+                schools can digitize core records first and grow into learning and communication tools.</p>
+            </div>
+          </div>
+          <div class="faq-item p-5">
+            <button
+              class="faq-toggle flex w-full items-center justify-between gap-4 text-left font-black text-scholink-navy"
+              type="button">
+              Who is the platform for?
+              <span class="faq-symbol text-2xl text-scholink-green">+</span>
+            </button>
+            <div class="faq-answer max-h-0 overflow-hidden opacity-0">
+              <p class="pt-4 leading-7 text-slate-700">It speaks to school leaders, teachers, parents, and learners,
+                with each group getting a focused benefit path.</p>
+            </div>
+          </div>
+          <div class="faq-item p-5">
+            <button
+              class="faq-toggle flex w-full items-center justify-between gap-4 text-left font-black text-scholink-navy"
+              type="button">
+              Does the design match the logo?
+              <span class="faq-symbol text-2xl text-scholink-green">+</span>
+            </button>
+            <div class="faq-answer max-h-0 overflow-hidden opacity-0">
+              <p class="pt-4 leading-7 text-slate-700">The page uses the logo's navy, blue, sky, and green palette, with
+                clean academic spacing and digital platform cues.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="bg-scholink-navy py-20 text-white">
+      <div class="mx-auto grid max-w-7xl gap-10 px-5 sm:px-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
+        <div>
+          <p class="text-sm font-black uppercase tracking-[0.18em] text-scholink-leaf">Next step</p>
+          <h2 class="mt-3 text-3xl font-black tracking-normal sm:text-5xl">Bring your school into one digital link.</h2>
+          <p class="mt-5 leading-8 text-blue-50">
+            Share the school profile and a wEkO-Scholink onboarding path can be shaped around the team, learners, and
+            families.
+          </p>
+        </div>
+        <form id="leadForm" class="rounded border border-white/15 bg-white p-6 text-slate-900 shadow-glow">
+          <div class="grid gap-4 sm:grid-cols-2">
+            <label class="grid gap-2 text-sm font-bold">
+              School name
+              <input class="rounded border border-slate-300 px-4 py-3 outline-none focus:border-scholink-blue"
+                name="school" required />
+            </label>
+            <label class="grid gap-2 text-sm font-bold">
+              Contact person
+              <input class="rounded border border-slate-300 px-4 py-3 outline-none focus:border-scholink-blue"
+                name="contact" required />
+            </label>
+            <label class="grid gap-2 text-sm font-bold sm:col-span-2">
+              Main priority
+              <select class="rounded border border-slate-300 px-4 py-3 outline-none focus:border-scholink-blue"
+                name="priority">
+                <option>Digital records</option>
+                <option>Parent communication</option>
+                <option>Learner progress tracking</option>
+                <option>Full school platform</option>
+              </select>
+            </label>
+          </div>
+          <button
+            class="mt-5 w-full rounded bg-scholink-green px-6 py-4 font-black text-white transition hover:bg-scholink-blue"
+            type="submit">
+            Send request
+          </button>
+          <p id="formMessage" class="mt-4 hidden rounded bg-green-50 px-4 py-3 text-sm font-bold text-green-800"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-white py-8">
+    <div
+      class="mx-auto flex max-w-7xl flex-col gap-4 px-5 text-sm text-slate-600 sm:px-8 md:flex-row md:items-center md:justify-between">
+      <p class="font-bold text-scholink-navy">wEkO-Scholink</p>
+      <p>From Traditional to Digital</p>
+    </div>
+  </footer>
+
+  <script>
+    const menuButton = document.querySelector("#menuButton");
+    const mobileMenu = document.querySelector("#mobileMenu");
+    menuButton.addEventListener("click", () => {
+      const isOpen = !mobileMenu.classList.contains("hidden");
+      mobileMenu.classList.toggle("hidden");
+      menuButton.setAttribute("aria-expanded", String(!isOpen));
+    });
+
+    const audiences = {
+      admins: {
+        kicker: "For administrators",
+        title: "Sharper school operations",
+        copy: "Centralize records, admissions, class structures, reporting, and daily oversight without burying staff in manual paperwork.",
+        features: ["Student information hub", "Attendance and class records", "Reports for leadership", "Role-based access"]
+      },
+      teachers: {
+        kicker: "For teachers",
+        title: "Less admin drag, more teaching time",
+        copy: "Keep assignments, attendance, feedback, and learner progress visible in one workflow that supports classroom rhythm.",
+        features: ["Task and assignment tracking", "Quick learner notes", "Progress snapshots", "Class communication"]
+      },
+      parents: {
+        kicker: "For parents",
+        title: "A clearer window into school life",
+        copy: "Families can follow updates, progress, notices, and school requests without waiting for paper letters or scattered chats.",
+        features: ["School announcements", "Performance updates", "Attendance visibility", "Direct notices"]
+      },
+      students: {
+        kicker: "For students",
+        title: "A digital path for learning progress",
+        copy: "Learners see what matters now, what is coming next, and how their progress connects across classes.",
+        features: ["Learning tasks", "Progress goals", "Resource access", "Feedback history"]
+      }
+    };
+
+    const tabButtons = document.querySelectorAll(".audience-tab");
+    const audienceKicker = document.querySelector("#audienceKicker");
+    const audienceTitle = document.querySelector("#audienceTitle");
+    const audienceCopy = document.querySelector("#audienceCopy");
+    const audienceFeatures = document.querySelector("#audienceFeatures");
+
+    function setAudience(name) {
+      const data = audiences[name];
+      audienceKicker.textContent = data.kicker;
+      audienceTitle.textContent = data.title;
+      audienceCopy.textContent = data.copy;
+      audienceFeatures.innerHTML = data.features
+        .map((feature) => `<article class="rounded border border-slate-200 bg-white p-5 shadow-sm"><p class="font-black text-scholink-navy">${feature}</p><div class="mt-4 h-1 w-16 rounded-full bg-scholink-green"></div></article>`)
+        .join("");
+      tabButtons.forEach((button) => {
+        const active = button.dataset.tab === name;
+        button.className = active
+          ? "audience-tab rounded border border-scholink-green bg-scholink-green px-5 py-3 font-bold text-white"
+          : "audience-tab rounded border border-slate-200 bg-white px-5 py-3 font-bold text-slate-700 hover:border-scholink-blue";
+      });
+    }
+
+    tabButtons.forEach((button) => button.addEventListener("click", () => setAudience(button.dataset.tab)));
+    setAudience("admins");
+
+    const priorities = {
+      records: {
+        title: "Digital records sprint",
+        copy: "Start with admissions, student profiles, class lists, and attendance so the school has a reliable foundation.",
+        readiness: 72
+      },
+      communication: {
+        title: "Family connection sprint",
+        copy: "Launch announcements, parent notices, teacher updates, and feedback loops to make school communication more dependable.",
+        readiness: 81
+      },
+      learning: {
+        title: "Progress visibility sprint",
+        copy: "Begin with assignments, marks, learner notes, and progress dashboards so support arrives earlier and with better context.",
+        readiness: 76
+      }
+    };
+
+    const priorityTitle = document.querySelector("#priorityTitle");
+    const priorityCopy = document.querySelector("#priorityCopy");
+    const readinessLabel = document.querySelector("#readinessLabel");
+    const readinessBar = document.querySelector("#readinessBar");
+    const priorityButtons = document.querySelectorAll(".priority-btn");
+
+    priorityButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        const data = priorities[button.dataset.priority];
+        priorityTitle.textContent = data.title;
+        priorityCopy.textContent = data.copy;
+        readinessLabel.textContent = `${data.readiness}%`;
+        readinessBar.style.width = `${data.readiness}%`;
+        priorityButtons.forEach((item) => item.classList.remove("border-scholink-green", "bg-green-50"));
+        button.classList.add("border-scholink-green", "bg-green-50");
+      });
+    });
+
+    document.querySelectorAll(".faq-toggle").forEach((button) => {
+      button.addEventListener("click", () => {
+        const item = button.closest(".faq-item");
+        const answer = item.querySelector(".faq-answer");
+        const symbol = item.querySelector(".faq-symbol");
+        const open = answer.style.maxHeight && answer.style.maxHeight !== "0px";
+        answer.style.maxHeight = open ? "0px" : `${answer.scrollHeight}px`;
+        answer.style.opacity = open ? "0" : "1";
+        symbol.textContent = open ? "+" : "-";
+      });
+    });
+
+    document.querySelector("#leadForm").addEventListener("submit", (event) => {
+      event.preventDefault();
+      const form = event.currentTarget;
+      const school = new FormData(form).get("school") || "your school";
+      const message = document.querySelector("#formMessage");
+      message.textContent = `Thanks. ${school} is ready for a wEkO-Scholink onboarding conversation.`;
+      message.classList.remove("hidden");
+      form.reset();
+    });
+  </script>
+</body>
+
+</html>
