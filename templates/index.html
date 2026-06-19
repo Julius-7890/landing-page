@@ -75,17 +75,15 @@
         <a class="hover:text-scholink-blue" href="#platform">Platform</a>
         <a class="hover:text-scholink-blue" href="#impact">Impact</a>
         <a class="hover:text-scholink-blue" href="#demo">Demo</a>
-        <button data-modal-target="quoteModal" type="button"
-          class="rounded border border-slate-200 bg-white px-4 py-2 text-slate-700 transition hover:border-scholink-blue hover:text-scholink-blue">
-          GET QUOTE
+        <button data-modal-target="quoteModal" type="button" class="text-slate-700 transition hover:text-scholink-blue">
+          get quote
         </button>
-        <button data-modal-target="loginModal" type="button"
-          class="rounded border border-slate-200 bg-white px-4 py-2 text-slate-700 transition hover:border-scholink-blue hover:text-scholink-blue">
-          LOGIN
+        <button data-modal-target="loginModal" type="button" class="text-slate-700 transition hover:text-scholink-blue">
+          login
         </button>
         <button data-modal-target="contactModal" type="button"
-          class="rounded border border-slate-200 bg-white px-4 py-2 text-slate-700 transition hover:border-scholink-blue hover:text-scholink-blue">
-          CONTACT
+          class="text-slate-700 transition hover:text-scholink-blue">
+          contact
         </button>
         <a class="rounded bg-scholink-green px-5 py-3 font-bold text-white shadow-sm transition hover:bg-scholink-navy"
           href="#contact">
@@ -466,7 +464,8 @@
           <h3 class="mt-2 text-2xl font-black text-scholink-ink">Welcome to wEkO_Scholink</h3>
           <p class="text-sm text-slate-600">Please login to access your account.</p>
         </div>
-        <button type="button" data-modal-close class="text-slate-400 transition hover:text-slate-600">Close</button>
+        <button type="button" data-modal-close aria-label="Close modal"
+          class="text-slate-400 text-2xl font-bold transition hover:text-slate-600">×</button>
       </div>
       <form id="loginForm" class="space-y-5 px-6 py-6">
         <label class="grid gap-2 text-sm font-bold text-slate-700">
@@ -538,8 +537,8 @@
             class="w-full rounded border border-slate-300 px-4 py-3 outline-none focus:border-scholink-blue"></textarea>
         </label>
         <div class="flex justify-end gap-3">
-          <button type="button" data-modal-close
-            class="rounded border border-slate-300 px-5 py-3 text-sm font-bold text-slate-700 transition hover:bg-slate-100">Cancel</button>
+          <button type="button" data-modal-close aria-label="Close modal"
+            class="rounded border border-slate-300 px-5 py-3 text-sm font-bold text-slate-700 transition hover:bg-slate-100">×</button>
           <button type="submit"
             class="rounded bg-scholink-navy px-5 py-3 text-sm font-black text-white transition hover:bg-scholink-blue">SUBMIT</button>
         </div>
@@ -554,7 +553,8 @@
           <h3 class="mt-2 text-2xl font-black text-scholink-ink">Get in touch with wEkO_Scholink</h3>
           <p class="text-sm text-slate-600">Send us your message and we’ll reply soon.</p>
         </div>
-        <button type="button" data-modal-close class="text-slate-400 transition hover:text-slate-600">Close</button>
+        <button type="button" data-modal-close aria-label="Close modal"
+          class="text-slate-400 text-2xl font-bold transition hover:text-slate-600">×</button>
       </div>
       <form id="contactForm" class="space-y-5 px-6 py-6">
         <label class="grid gap-2 text-sm font-bold text-slate-700">
